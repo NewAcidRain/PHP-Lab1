@@ -3,7 +3,7 @@ services:
   php:
     build: .
     volumes:
-      - './src:/var/www/html'
+      - '.:/var/www/html'
   nginx:
     image: nginx:latest
     ports:
