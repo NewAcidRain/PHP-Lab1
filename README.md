@@ -1,5 +1,5 @@
 # PHP
 
-##Lab1
+## Lab1
 
-###http://houug.ru/main.php
+### http://houug.ru/main.php
