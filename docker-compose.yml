@@ -1,14 +1,18 @@
 version: "3.9"
 services:
-  nginx:
+  php:
     build: .
+    volumes:
+      - './src:/var/www/html'
+  nginx:
+    image: nginx:latest
     ports:
       - "80:80"
-    links:
-      - fpm
-  fpm:
-    image: php:fpm
-    ports:
-      - ":9000"
     volumes:
-      - ./:/complex/path/to/files/
+      - './src:/var/www/html'
+      - './docker/nginx/conf.d:/etc/nginx/conf.d'
+  composer:
+    image: composer
+    volumes:
+      - .:/app/
+    command: install
