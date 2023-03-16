@@ -1,6 +1,6 @@
 <?php
 
-namespace labs\src;
+namespace labs;
 
 class Department
 {

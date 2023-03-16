@@ -1,5 +1,5 @@
 <?php
-namespace labs\src;
+namespace labs;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 
