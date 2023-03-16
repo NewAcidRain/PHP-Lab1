@@ -2,8 +2,8 @@
 
 namespace labs;
 
-use labs\src\Department;
-use labs\src\Employee;
+use labs\Department;
+use labs\Employee;
 
 include 'Employee.php';
 include 'Department.php';
